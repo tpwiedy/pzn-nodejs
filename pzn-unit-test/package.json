@@ -12,6 +12,7 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
+    "maxConcurrency": 2,
     "collectCoverage": true,
     "coverageThreshold": {
       "global": {

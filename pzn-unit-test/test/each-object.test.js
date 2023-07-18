@@ -1,4 +1,4 @@
-import { sumAll } from "../src/sum";
+import { sumAll } from "../src/sum.js";
 
 const table = [
   {
@@ -17,7 +17,7 @@ const table = [
 
 test.each(table)(
   "test sumAll($numbers) should result $expected",
-  (numbers, expected) => {
+  ({ numbers, expected }) => {
     expect(sumAll(numbers)).toBe(expected);
   }
 );
