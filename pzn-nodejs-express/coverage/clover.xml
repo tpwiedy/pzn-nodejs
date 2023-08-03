@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1690796092868" clover="3.2.0">
-  <project timestamp="1690796092868" name="All files">
+<coverage generated="1691030587950" clover="3.2.0">
+  <project timestamp="1691030587950" name="All files">
     <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="7" coveredelements="0" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="hello.js" path="/home/tpwiedy/Documents/Course/NODEJS/pzn-nodejs/pzn-nodejs-express/src/hello.js">
       <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
