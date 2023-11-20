@@ -1,0 +1,125 @@
+### Register
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "wiedytp",
+  "password" : "rahasia",
+  "name": "Wiedy Pratama"
+
+}
+
+### Login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "wiedytp",
+  "password" : "rahasia"
+
+}
+
+### Token 3fed3c95-a38c-4c69-bc82-384c56e22552
+### Current User
+GET  http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Logout
+DELETE   http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Create Contact
+POST  http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+{
+    "first_name": "Asep",
+  "last_name": "Stroberry",
+  "email": "asep@pzn.com",
+  "phone": "565656767"
+}
+
+### Get Contact
+GET  http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Get Contact with Filters
+GET  http://localhost:3000/api/contacts?name=parjo
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Get Specific Contact
+GET  http://localhost:3000/api/contacts/855
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Update Contact
+PUT  http://localhost:3000/api/contacts/856
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+{
+    "first_name": "Pesa",
+  "last_name": "Stroberry",
+  "email": "pesa@pzn.com",
+  "phone": "56564556767"
+}
+
+### Delete Contact
+DELETE   http://localhost:3000/api/contacts/856
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Create Address
+POST  http://localhost:3000/api/contacts/855/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+{
+  "street" : "Rumah",
+  "city" : "Bandung",
+  "province" : "Jawa Barat",
+  "country" : "Indonesia",
+  "postal_code" : "40526"
+}
+
+### Get Address
+GET  http://localhost:3000/api/contacts/855/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+### Update Address
+PUT  http://localhost:3000/api/contacts/855/addresses/41
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
+
+{
+  "street" : "Kampung",
+  "city" : "Purbalingga",
+  "province" : "Jawa Tengah",
+  "country" : "Indonesia",
+  "postal_code" : "50238"
+}
+
+### Delete Address
+DELETE  http://localhost:3000/api/contacts/855/addresses/40
+Content-Type: application/json
+Accept: application/json
+Authorization: 3fed3c95-a38c-4c69-bc82-384c56e22552
